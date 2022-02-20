@@ -1,0 +1,10 @@
+
+Types of Pagination:
+
+1) Page based(Query using Offset)
+2) Keyset(Query using unique values in a column such as since_id, created_at)
+3) Cursor
+
+
+
+https://ignaciochiazzo.medium.com/paginating-requests-in-apis-d4883d4c1c4c#:~:text=Most%20of%20the%20use%20cases,%2C%20and%20Cursor%2Dbased%20Pagination

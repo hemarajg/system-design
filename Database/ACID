@@ -1,0 +1,38 @@
+ACID
+
+Atomicity => All the transactions(including the dependent) must be either successful in whole or failure in whole.
+
+Consistency => 
+
+
+
+Isolation =>
+
+
+Problems:
+
+1) Dirty Reads => When two transactions happening simultaneously and the first transaction updates the record meanwhile the second transaction reads the updated value but the first record rollbacks the transaction resulting in dirty read.
+
+2) Non-repeatable reads => When two transactions happening simultaneously the first transaction reads a value from record meanwhile the second transaction updates and commit the same value in record. And when the first transaction reads the same record it will cause mismatch with the first read.
+
+
+3) Phantom read
+
+4) Lost Updates
+
+
+Isolation Levels:
+
+1) Read uncommited => will not solve any of the above problems because it doesn't involve any isolation all the changes performed outside this transaction will be reflected here.
+
+2) Read commited => each query will read only commited stuff and these stuff will be reflected from outside of the transaction too. This will solve Dirty read.
+
+3) Repeatable read => each query will read only commited stuff at the beginning of the transaction so any commited stuff happend after the transaction starts will not be reflected here. Will solve Dirty reads, lost updates and non-repeatable reads
+
+4) Serialize => Transactions are serailized. So no simultaneous transactions are possible. It will solve all the above 4 problems. But the disadvantage is it's too slow.
+
+
+Durablitiy
+
+
+

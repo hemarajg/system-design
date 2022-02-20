@@ -1,0 +1,17 @@
+Types of index:
+
+Clustered => 
+
+1) Index recides on table itself.
+2) Default on primary key of the table which should be in sorted order(mostly id) so that tree data structure efficiently finds the record.
+3) There can be only one clustered index in a table. Because only one sorting order is prefered. But we can create index with mulitple columns. Priority of sorting will be from left most column.
+4) Indexed column must be unique
+
+
+Non-clustered => 
+
+1) Index is separated from the table. Format of the index will be [column_name, row_reference].
+2) Whenver a query is performed using the indexed column it will first search the external storage index and find the corresponding row number of the value given in the query. Then it will query the actual table with the help of row number.
+3) There can be multiple non clustered index in a table.
+4) It is useless when most of the indexed column values are similar because the canditate rows are almost all the rows so there is no performance on this.
+5) Indexed column may not be unique.
