@@ -1,0 +1,18 @@
+Open System Interconnection
+
+
+Layers:
+
+Application => From this the requests are made. (UI)
+
+Presentation => Converts request into ASCII and encrypt if necessary
+
+Session => Initiates a session between networks
+
+Transport => Adds port of both sender and receiver in the request data. This part is called segments.
+
+Network => Segments are splitted in to packets and IP address of both sender and receiver are added in each packet.
+
+Data_link => MAC address of both sender and receiver are added and this layer of data is called Frames.
+
+Physical => Data will in the form of bytes(0's & 1's)

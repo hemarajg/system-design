@@ -1,0 +1,23 @@
+Web API:
+
+Types of web api:
+
+REST => 
+  1. Mostly used with http protocol.
+  2. CURD options have separate endpoints using http verbs.
+  3. It supports multiple data formats like json,xml,text,etc.
+  4. Less secure.
+  5. Client and server are not dependent.
+
+SOAP =>
+
+  1. Supports http, smtp protocols.
+  2. API calls will use method names similar to RPC. Where as method names are mapped to API's.
+  3. It supports only xml format.
+  4. Provides more security with help of WS-Security.
+  5. Client and server are dependent.
+
+RPC =>
+
+  1. Mostly used by calling the remote server methods using any RPC clients.
+  2. Supports http if mapping to method provided.
